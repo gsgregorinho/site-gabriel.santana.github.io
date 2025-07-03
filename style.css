@@ -1,6 +1,7 @@
+/* Importa a biblioteca de ícones Font Awesome do CDN */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
-/* Estilos para o header */
+/* Estilização do cabeçalho fixo no topo da página */
 header {
     display: flex;
     justify-content: space-between;
@@ -13,6 +14,7 @@ header {
     z-index: 100;
 }
 
+/* Container principal do cabeçalho */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -21,12 +23,14 @@ header {
     width: 100%;
 }
 
+/* Estilo do wrapper do logo */
 .logo-wrapper {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
+/* Estilo do texto do logo */
 .logo-text {
     color: #aecdec;
     font-weight: bold;
@@ -34,6 +38,7 @@ header {
     text-decoration: none;
 }
 
+/* Estilo do ícone de tecnologia */
 .tech-icon {
     font-size: 28px;
     color: #3498db;
@@ -41,7 +46,7 @@ header {
     align-items: center;
 }
 
-/* Ajuste no menu */
+/* Estilização do menu de navegação */
 .menu {
     display: flex;
     gap: 24px;
@@ -50,10 +55,12 @@ header {
     padding: 0;
 }
 
+/* Margem direita do menu */
 .menu {
     margin-right: 32px;
 }
 
+/* Reset básico para todos os elementos */
 * {
     margin: 0;
     padding: 0;
@@ -61,12 +68,14 @@ header {
     font-family: Arial, sans-serif;
 }
 
+/* Estilos gerais do corpo da página */
 body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
 }
 
+/* Estilização alternativa do cabeçalho */
 header {
     background-color: #091346;
     color: #fff;
@@ -76,17 +85,20 @@ header {
     top: 0;
 }
 
+/* Estilização dos itens do menu */
 .menu {
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
+/* Estilo dos itens da lista do menu */
 .menu li {
     margin: 0 15px;
     white-space: nowrap;
 }
 
+/* Estilo dos links do menu */
 .menu a {
     color: #fff;
     text-decoration: none;
@@ -95,16 +107,19 @@ header {
     transition: background-color 0.3s;
 }
 
+/* Efeito hover nos links do menu */
 .menu a:hover {
     background-color: #555;
 }
 
+/* Estilização da área principal de conteúdo */
 main {
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 20px;
 }
 
+/* Estilo padrão das seções */
 section {
     padding-top: 30px;
     margin-bottom: 10px;
@@ -114,11 +129,13 @@ section {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Estilo dos títulos principais */
 h1 {
     margin-bottom: 20px;
     color: #444;
 }
 
+/* Estilização do rodapé fixo */
 footer {
     text-align: center;
     padding: 10px;
@@ -129,7 +146,7 @@ footer {
     width: 100%;
 }
 
-/* Ícones nos formulários */
+/* Estilo dos ícones nos formulários */
 .form-group label i {
     margin-right: 8px;
     color: #3498db;
@@ -137,12 +154,14 @@ footer {
     text-align: center;
 }
 
+/* Estilização da seção de contato */
 #contato {
     background-color: #f8f9fa;
     padding: 48px 0;
     margin-bottom: 32px;
 }
 
+/* Container do formulário de contato */
 .container-contato {
     max-width: 800px;
     margin: 0 auto;
@@ -152,36 +171,41 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo do título da seção de contato */
 #contato h1 {
     text-align: center;
     color: #2c3e50;
     margin-bottom: 24px;
 }
 
+/* Estilo do texto introdutório do contato */
 #contato p {
     text-align: center;
     color: #7f8c8d;
     margin-bottom: 32px;
 }
 
-/* Estilo do formulário */
+/* Layout do formulário de contato */
 .form-contato {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
+/* Estilo dos grupos de campos do formulário */
 .form-group {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
+/* Estilo das labels do formulário */
 .form-group label {
     font-weight: 600;
     color: #2c3e50;
 }
 
+/* Estilo dos campos de entrada */
 .form-group input,
 .form-group textarea {
     padding: 12px;
@@ -191,6 +215,7 @@ footer {
     transition: border-color 0.3s;
 }
 
+/* Efeito de foco nos campos */
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: #3498db;
@@ -198,11 +223,13 @@ footer {
     box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
 }
 
+/* Configuração da área de texto */
 textarea {
     resize: vertical;
     min-height: 120px;
 }
 
+/* Estilo do botão de enviar */
 .btn-enviar {
     background-color: #3498db;
     color: white;
@@ -214,22 +241,25 @@ textarea {
     transition: background-color 0.3s;
 }
 
+/* Efeito hover no botão */
 .btn-enviar:hover {
     background-color: #2980b9;
 }
 
-/* Estilo da seção Portfólio */
+/* Estilização da seção do portfólio */
 #portfolio {
     background-color: #f5f7fa;
     padding: 48px 0;
 }
 
+/* Container dos projetos do portfólio */
 .container-portfolio {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 32px;
 }
 
+/* Texto introdutório do portfólio */
 .portfolio-intro {
     text-align: center;
     margin-bottom: 32px;
@@ -237,6 +267,7 @@ textarea {
     font-size: 17px;
 }
 
+/* Grid de projetos */
 .projetos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -244,6 +275,7 @@ textarea {
     margin-top: 32px;
 }
 
+/* Cartão de cada projeto */
 .projeto-card {
     background: white;
     border-radius: 8px;
@@ -252,26 +284,31 @@ textarea {
     overflow: hidden;
 }
 
+/* Efeito hover nos cards de projeto */
 .projeto-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Conteúdo interno dos cards */
 .projeto-content {
     padding: 24px;
 }
 
+/* Título dos projetos */
 .projeto-content h3 {
     color: #2c3e50;
     margin-bottom: 8px;
 }
 
+/* Descrição dos projetos */
 .projeto-content p {
     color: #7f8c8d;
     margin-bottom: 24px;
     line-height: 1.5;
 }
 
+/* Links para os projetos */
 .projeto-link {
     display: inline-flex;
     align-items: center;
@@ -284,15 +321,17 @@ textarea {
     transition: background-color 0.3s;
 }
 
+/* Efeito hover nos links */
 .projeto-link:hover {
     background-color: #2980b9;
 }
 
+/* Ícones dentro dos links */
 .projeto-link i {
     font-size: 19px;
 }
 
-/* Estilo para os ícones de redes sociais */
+/* Seção de redes sociais */
 .redes-sociais {
     margin-top: 32px;
     text-align: center;
@@ -300,38 +339,43 @@ textarea {
     border-top: 1px solid #eee;
 }
 
+/* Título das redes sociais */
 .redes-sociais h3 {
     color: #2c3e50;
     margin-bottom: 16px;
 }
 
+/* Container dos ícones sociais */
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 24px;
 }
 
+/* Links das redes sociais */
 .social-icons a {
     color: #7f8c8d;
     font-size: 28px;
     transition: all 0.3s ease;
 }
 
+/* Efeito hover nos ícones sociais */
 .social-icons a:hover {
     transform: translateY(-3px);
     color: #3498db;
 }
 
-/* Ajustes para ícone no botão */
+/* Espaçamento do ícone no botão */
 .btn-enviar i {
     margin-right: 8px;
 }
 
+/* Configuração de rolagem suave */
 html {
     scroll-behavior: smooth;
 }
 
-/* Estilo para o botão "Voltar ao Topo" */
+/* Estilo do botão "voltar ao topo" */
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -353,23 +397,25 @@ html {
     z-index: 999;
 }
 
+/* Estado ativo do botão */
 .back-to-top.active {
     opacity: 1;
     visibility: visible;
 }
 
-/* Ajuste para o header fixo não cobrir o conteúdo */
+/* Ajuste de scroll para não esconder conteúdo atrás do header */
 section {
     scroll-margin-top: 100px;
     padding-top: 30px;
 }
 
-/* Estilo para menu ativo */
+/* Estilo do item ativo no menu */
 .menu a.active {
     color: #03e9f4;
     font-weight: bold;
 }
 
+/* Efeito visual para item ativo */
 .menu a.active::after {
     width: 100% !important;
     background: #03e9f4;

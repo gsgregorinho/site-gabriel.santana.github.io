@@ -1,33 +1,54 @@
 <!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
 <html lang="pt-br">
+<!-- Idioma principal da página: Português do Brasil -->
+
 <head>
+    <!-- Meta tags para configuração básica da página -->
     <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configuração para layout responsivo em dispositivos móveis -->
     <title>Meu Portifólio</title>
+    <!-- Título da página que aparece na aba do navegador -->
+    
+    <!-- Links para folhas de estilo -->
     <link rel="stylesheet" href="style.css">
+    <!-- Arquivo CSS personalizado -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Biblioteca de ícones Font Awesome -->
 </head>
+
 <body>
+    <!-- Cabeçalho da página -->
     <header>
+        <!-- Container do cabeçalho -->
         <div class="header-container">
+            <!-- Logo/Nome -->
             <div class="logo-text">
                 GS.gregorio
             </div>
+            <!-- Ícone de tecnologia -->
             <div class="tech-icon">
                 <i class="fas fa-laptop-code"></i>
             </div>
         </div>
+        
+        <!-- Navegação principal -->
         <nav>
             <ul class="menu">
+                <!-- Links de navegação -->
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#formacao">Formação</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Conteúdo principal da página -->
     <main>
+        <!-- Seção "Sobre Mim" -->
         <section id="sobre">
             <h1>Sobre Mim</h1>
             <p>Sou Gabriel Santana Gregório, tenho 28 anos e sou apaixonado por música e tecnologia!</p> 
@@ -36,97 +57,115 @@
             <p>Espero aprender muito mais com a faculdade para consolidar minha carreira como desenvolvedor! </p>
         </section>
 
+        <!-- Seção "Formação" -->
         <section id="formacao">
             <h1>Formação</h1>
             <p>Tenho o curso de aprendizagem industrial em Manutenção em Refrigeração e curso Técnico em Automação Industrial, ambos pelo SENAI.</p>
             <p>Agora estou cursando Análise e Desenvolvimento de Sistemas pela Uninter.</p>
         </section>
 
-<section id="portfolio">
-    <div class="container-portfolio">
-        <h1>Portfólio</h1>
-        <p class="portfolio-intro">Aqui estão alguns de meus projetos:</p>
-        
-        <div class="projetos-grid">
-            <div class="projeto-card">
-                <div class="projeto-content">
-                    <h3>Projeto FDS Uninter</h3>
-                    <p>Projeto acadêmico desenvolvido durante o curso de Fundamentos de Desenvolvimento de Software.</p>
-                    <a href="https://github.com/gsgregorinho/fds.uninter.git" target="_blank" class="projeto-link">
-                        <i class="fab fa-github"></i> Ver no GitHub
-                    </a>
+        <!-- Seção "Portfólio" -->
+        <section id="portifolio">
+            <div class="container-portifolio">
+                <h1>Portifólio</h1>
+                <p class="portifolio-intro">Aqui estão alguns de meus projetos:</p>
+                
+                <!-- Grid de projetos -->
+                <div class="projetos-grid">
+                    <!-- Card do primeiro projeto -->
+                    <div class="projeto-card">
+                        <div class="projeto-content">
+                            <h3>Projeto FDS Uninter</h3>
+                            <p>Projeto acadêmico desenvolvido durante o curso de Fundamentos de Desenvolvimento de Software.</p>
+                            <a href="https://github.com/gsgregorinho/fds.uninter.git" target="_blank" class="projeto-link">
+                                <i class="fab fa-github"></i> Ver no GitHub
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Card do segundo projeto -->
+                    <div class="projeto-card">
+                        <div class="projeto-content">
+                            <h3>Projeto Code50</h3>
+                            <p>Repositório com soluções para problemas do CS50, curso de Ciência da Computação de Harvard.</p>
+                            <a href="https://github.com/code50/95984512.git" target="_blank" class="projeto-link">
+                                <i class="fab fa-github"></i> Ver no GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="projeto-card">
-                <div class="projeto-content">
-                    <h3>Projeto Code50</h3>
-                    <p>Repositório com soluções para problemas do CS50, curso de Ciência da Computação de Harvard.</p>
-                    <a href="https://github.com/code50/95984512.git" target="_blank" class="projeto-link">
-                        <i class="fab fa-github"></i> Ver no GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
+        <!-- Seção "Contato" -->
         <section id="contato">
-    <div class="container-contato">
-        <h1>Contato</h1>
-        <p>Preencha o formulário abaixo ou me encontre nas redes sociais.</p>
-        
-        <form class="form-contato" action="https://formsubmit.co/seu-email@exemplo.com" method="POST">
-            <div class="form-group">
-                <label for="nome">
-                    <i class="fas fa-user"></i> Nome:
-                </label>
-                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
-            </div>
-            
-            <div class="form-group">
-                <label for="email">
-                    <i class="fas fa-envelope"></i> E-mail:
-                </label>
-                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
-            </div>
-            
-            <div class="form-group">
-                <label for="mensagem">
-                    <i class="fas fa-comment"></i> Mensagem:
-                </label>
-                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem"></textarea>
-            </div>
-            
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
-            
-            <button type="submit" class="btn-enviar">
-                <i class="fas fa-paper-plane"></i> Enviar Mensagem
-            </button>
-        </form>
+            <div class="container-contato">
+                <h1>Contato</h1>
+                <p>Preencha o formulário abaixo ou me encontre nas redes sociais.</p>
+                
+                <!-- Formulário de contato -->
+                <form class="form-contato" action="https://formsubmit.co/seu-email@exemplo.com" method="POST">
+                    <!-- Campo Nome -->
+                    <div class="form-group">
+                        <label for="nome">
+                            <i class="fas fa-user"></i> Nome:
+                        </label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                    </div>
+                    
+                    <!-- Campo E-mail -->
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i> E-mail:
+                        </label>
+                        <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                    </div>
+                    
+                    <!-- Campo Mensagem -->
+                    <div class="form-group">
+                        <label for="mensagem">
+                            <i class="fas fa-comment"></i> Mensagem:
+                        </label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                    
+                    <!-- Campos ocultos para configuração do FormSubmit -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                    
+                    <!-- Botão de envio -->
+                    <button type="submit" class="btn-enviar">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
 
-        <div class="redes-sociais">
-            <h3>Me encontre nas redes sociais:</h3>
-            <div class="social-icons">
-                <a href="https://github.com/gsgregorinho" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/gs.gregorinho/" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
+                <!-- Redes sociais -->
+                <div class="redes-sociais">
+                    <h3>Me encontre nas redes sociais:</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/gsgregorinho" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gs.gregorinho/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
     </main>
 
+    <!-- Rodapé da página -->
     <footer>
         <p>&copy; 2025 Meu Portifólio. Todos os direitos reservados.</p>
     </footer>
+    
+    <!-- Botão "Voltar ao topo" -->
     <a href="#" class="back-to-top" title="Voltar ao topo">
         <i class="fas fa-arrow-up"></i>
     </a>
+    
+    <!-- Inclusão do arquivo JavaScript -->
     <script src="script.js" defer></script>
 </body>
 </html>
