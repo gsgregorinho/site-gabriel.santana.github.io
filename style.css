@@ -1,0 +1,376 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Estilos para o header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    width: 100%;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-text {
+    color: #aecdec;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.tech-icon {
+    font-size: 28px;
+    color: #3498db;
+    display: flex;
+    align-items: center;
+}
+
+/* Ajuste no menu */
+.menu {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    margin-right: 32px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #091346;
+    color: #fff;
+    padding: 3px 0;
+    height: 50px;
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 15px;
+    white-space: nowrap;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+section {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    padding: 42px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #091346;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ícones nos formulários */
+.form-group label i {
+    margin-right: 8px;
+    color: #3498db;
+    width: 20px;
+    text-align: center;
+}
+
+#contato {
+    background-color: #f8f9fa;
+    padding: 48px 0;
+    margin-bottom: 32px;
+}
+
+.container-contato {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#contato h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 24px;
+}
+
+#contato p {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 32px;
+}
+
+/* Estilo do formulário */
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-enviar {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo da seção Portfólio */
+#portfolio {
+    background-color: #f5f7fa;
+    padding: 48px 0;
+}
+
+.container-portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.portfolio-intro {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #555;
+    font-size: 17px;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.projeto-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.projeto-content {
+    padding: 24px;
+}
+
+.projeto-content h3 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.projeto-content p {
+    color: #7f8c8d;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.projeto-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #3498db;
+    color: white;
+    padding: 9px 19px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.projeto-link:hover {
+    background-color: #2980b9;
+}
+
+.projeto-link i {
+    font-size: 19px;
+}
+
+/* Estilo para os ícones de redes sociais */
+.redes-sociais {
+    margin-top: 32px;
+    text-align: center;
+    padding-top: 32px;
+    border-top: 1px solid #eee;
+}
+
+.redes-sociais h3 {
+    color: #2c3e50;
+    margin-bottom: 16px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-icons a {
+    color: #7f8c8d;
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    color: #3498db;
+}
+
+/* Ajustes para ícone no botão */
+.btn-enviar i {
+    margin-right: 8px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo para o botão "Voltar ao Topo" */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ajuste para o header fixo não cobrir o conteúdo */
+section {
+    scroll-margin-top: 100px;
+    padding-top: 30px;
+}
+
+/* Estilo para menu ativo */
+.menu a.active {
+    color: #03e9f4;
+    font-weight: bold;
+}
+
+.menu a.active::after {
+    width: 100% !important;
+    background: #03e9f4;
+}

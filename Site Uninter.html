@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-text">
+                GS.gregorio
+            </div>
+            <div class="tech-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h1>Sobre Mim</h1>
+            <p>Sou Gabriel Santana Gregório, tenho 28 anos e sou apaixonado por música e tecnologia!</p> 
+            <p>Sempre fui encantado com ciências e sobre como o mundo funciona.</p>
+            <p>Sou técnico em automação industrial e amo atuar na área de programação!</p>
+            <p>Espero aprender muito mais com a faculdade para consolidar minha carreira como desenvolvedor! </p>
+        </section>
+
+        <section id="formacao">
+            <h1>Formação</h1>
+            <p>Tenho o curso de aprendizagem industrial em Manutenção em Refrigeração e curso Técnico em Automação Industrial, ambos pelo SENAI.</p>
+            <p>Agora estou cursando Análise e Desenvolvimento de Sistemas pela Uninter.</p>
+        </section>
+
+<section id="portfolio">
+    <div class="container-portfolio">
+        <h1>Portfólio</h1>
+        <p class="portfolio-intro">Aqui estão alguns de meus projetos:</p>
+        
+        <div class="projetos-grid">
+            <div class="projeto-card">
+                <div class="projeto-content">
+                    <h3>Projeto FDS Uninter</h3>
+                    <p>Projeto acadêmico desenvolvido durante o curso de Fundamentos de Desenvolvimento de Software.</p>
+                    <a href="https://github.com/gsgregorinho/fds.uninter.git" target="_blank" class="projeto-link">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                </div>
+            </div>
+            
+            <div class="projeto-card">
+                <div class="projeto-content">
+                    <h3>Projeto Code50</h3>
+                    <p>Repositório com soluções para problemas do CS50, curso de Ciência da Computação de Harvard.</p>
+                    <a href="https://github.com/code50/95984512.git" target="_blank" class="projeto-link">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="contato">
+    <div class="container-contato">
+        <h1>Contato</h1>
+        <p>Preencha o formulário abaixo ou me encontre nas redes sociais.</p>
+        
+        <form class="form-contato" action="https://formsubmit.co/seu-email@exemplo.com" method="POST">
+            <div class="form-group">
+                <label for="nome">
+                    <i class="fas fa-user"></i> Nome:
+                </label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">
+                    <i class="fas fa-envelope"></i> E-mail:
+                </label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+            </div>
+            
+            <div class="form-group">
+                <label for="mensagem">
+                    <i class="fas fa-comment"></i> Mensagem:
+                </label>
+                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem"></textarea>
+            </div>
+            
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+            
+            <button type="submit" class="btn-enviar">
+                <i class="fas fa-paper-plane"></i> Enviar Mensagem
+            </button>
+        </form>
+
+        <div class="redes-sociais">
+            <h3>Me encontre nas redes sociais:</h3>
+            <div class="social-icons">
+                <a href="https://github.com/gsgregorinho" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/gs.gregorinho/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Meu Portifólio. Todos os direitos reservados.</p>
+    </footer>
+    <a href="#" class="back-to-top" title="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="script.js" defer></script>
+</body>
+</html>
